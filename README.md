@@ -15,14 +15,6 @@ The **Gym AI Workout Planner** is a simple AI-powered application that generates
 - Python 3.x
 - Flask (for the web interface)
 
-## Installation
-
-1. Clone this repository:
-
-    ```bash
-    git clone https://github.com/your-username/gym-ai-workout-planner.git
-    cd gym-ai-workout-planner
-    ```
 
 2. Install the required Python packages:
 
