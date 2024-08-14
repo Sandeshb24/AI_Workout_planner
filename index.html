@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym AI Workout Planner</title>
+</head>
+<body>
+    <h1>Gym AI Workout Planner</h1>
+    <form action="/generate" method="POST">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br>
+        
+        <label>Age:</label><br>
+        <input type="number" name="age" required><br>
+        
+        <label>Gender (M/F):</label><br>
+        <input type="text" name="gender" required><br>
+        
+        <label>Height (cm):</label><br>
+        <input type="number" name="height" required><br>
+        
+        <label>Weight (kg):</label><br>
+        <input type="number" name="weight" required><br>
+        
+        <label>Fitness Goal:</label><br>
+        <select name="goal" required>
+            <option value="1">Weight Loss</option>
+            <option value="2">Muscle Gain</option>
+            <option value="3">Maintenance</option>
+        </select><br>
+        
+        <label>Activity Level:</label><br>
+        <select name="activity_level" required>
+            <option value="1">Sedentary</option>
+            <option value="2">Light Activity</option>
+            <option value="3">Moderate Activity</option>
+            <option value="4">Active</option>
+            <option value="5">Very Active</option>
+        </select><br>
+        
+        <label>Preferred Workout Type:</label><br>
+        <select name="workout_type" required>
+            <option value="1">Cardio</option>
+            <option value="2">Strength Training</option>
+            <option value="3">Flexibility</option>
+            <option value="4">HIIT</option>
+            <option value="5">Mixed</option>
+        </select><br>
+        
+        <label>Experience Level:</label><br>
+        <select name="experience_level" required>
+            <option value="1">Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3">Advanced</option>
+        </select><br>
+        
+        <label>Available Equipment:</label><br>
+        <select name="equipment" required>
+            <option value="1">No Equipment</option>
+            <option value="2">Basic Equipment</option>
+            <option value="3">Full Gym Access</option>
+        </select><br>
+        
+        <label>Time Available per Day (minutes):</label><br>
+        <input type="number" name="time_available" required><br><br>
+        
+        <input type="submit" value="Generate Workout Plan">
+    </form>
+</body>
+</html>
